@@ -1,0 +1,110 @@
+<resources>
+    <string name="app_name">GetGas</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+
+    <string name="tab_words">Words</string>
+    <string name="tab_numbers">Numbers</string>
+
+    <string name="favorites">Favorites</string>
+    <string name="home">Home</string>
+
+    <string name="tab_restaurants">Restaurants</string>
+    <string name="tab_categories">Categories</string>
+    <string name="tab_featured">Featured</string>
+    <string name="tab_search">Search</string>
+    <string name="tab_map">Map</string>
+    <string name="tab_gallery">Gallery</string>
+    <string name="galleries">Galleries</string>
+
+    <string name="sub_tab_details">Details</string>
+    <string name="sub_tab_map">Map</string>
+    <string name="sub_tab_gallery">Gallery</string>
+
+
+    <string name="detail_food_rating">Food Rating</string>
+    <string name="detail_price_rating">Price Rating</string>
+    <string name="detail_working_hours">Working Hours</string>
+    <string name="detail_amenitites">Amenities</string>
+    <string name="hint_any_keywords">Any Keywords</string>
+    <string name="keywords">Keywords</string>
+    <string name="category">Category</string>
+    <string name="price_rating_range">Price Rating Range</string>
+    <string name="food_rating_range">Food Rating Range</string>
+
+    <string name="select_category">Select Category</string>
+    <string name="search">Search</string>
+    <string name="clear">Clear</string>
+    <string name="no_results_found">No Results Found.</string>
+    <string name="no_name"></string>
+    <string name="menu">Menu</string>
+    <string name="tap_back_again_to_exit">Please tap back again to exit the app.</string>
+
+    <string name="header_categories">Categories</string>
+    <string name="ok">Ok</string>
+
+    <string name="permission_error">Permission Error</string>
+    <string name="permission_error_details_location">Permission location denied. You need to turn on location to get relevant results for the restaurants nearby.</string>
+    <string name="failed_data">Failed to get data.</string>
+
+    <string name="location_error">Location Error</string>
+    <string name="gps_not_on">GPS is currently turn off. Please enable it under your mobile Settings > Location.</string>
+    <string name="categories">Categories</string>
+
+    <string name="cannot_determine_location">Cannot determine location.</string>
+    <string name="cannot_determine_direction">Failed to get direction.</string>
+    <string name="select_one_restaurant">Please select a restaurant.</string>
+    <string name="km">Km.</string>
+    <string name="loading_image">Loading Image</string>
+
+    <string name="restaurant_details">Restaurant Details</string>
+    <string name="resuls">Results</string>
+    <string name="settings">Settings</string>
+
+
+    <string name="radius_nearby">Radius Nearby</string>
+    <string name="radius_nearby_msg">Enter radius in Km.</string>
+    <string name="app_settings">App Settings</string>
+    <string name="max">Max</string>
+    <string name="pref_title_application_version">Application Version</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <string name="go_to_settings">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="all">All</string>
+    <string name="location_error_not_turned_on">No data to be shown because you decline the location request.</string>
+    <string name="grant_permission_call">You need to grant permission request for calling.</string>
+
+    <string name="consent">Consent</string>
+    <string name="age_consent_title">How old are you?</string>
+    <string name="age_consent_category">Age</string>
+    <string name="age_consent_what">https://gdpr-info.eu/art-8-gdpr/</string>
+    <string name="age_consent_why_needed">You must be at least 16 years of age to use this App.</string>
+    <string name="age_consent_more_information">Due to European regulations, you must be at least 16 years of age to use this App.</string>
+
+    <string name="basic_app_consent_title">Basic functions</string>
+    <string name="basic_app_consent_category">Application</string>
+    <string name="basic_app_consent_what">http://example.com/gdpr</string>
+    <string name="basic_app_consent_why_needed">We store your E-mail address, password, username, Facebook ID and Twitter ID in our server.</string>
+    <string name="basic_app_consent_more_information">The email address is used to send you newsletter. You can opt-out during our mass newsletter. Username, Password, Facebook and Twitter ID are used to be able to logged in the app to leave reviews and ratings. You can delete this account under profile page and also if you manage to leave reviews then you can delete it too. </string>
+
+    <string name="ads_consent_title">Advertising</string>
+    <string name="ads_consent_category">Monetization</string>
+    <string name="ads_consent_what">AdMob is GDPR compliant. We know that google personalize or non personalize ad. We set non-personalize ad to better serve you.</string>
+    <string name="ads_consent_why_needed">We required this permission to monetize this App.</string>
+    <string name="ads_consent_more_information">https://firebase.google.com/support/privacy</string>
+
+    <string name="visit_page">VISIT PAGE</string>
+    <string name="required">Required</string>
+    <string name="why">Why</string>
+    <string name="what">What</string>
+    <string name="more_information">More Information</string>
+    <string name="require_consent">We require this consent for the app to function.</string>
+    <string name="choose_browser">Choose browser:</string>
+    <string name="no_phone_no_provided">No phone number provided.</string>
+</resources>

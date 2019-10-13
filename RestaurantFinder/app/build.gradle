@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    buildToolsVersion '27.0.3'
+
+    defaultConfig {
+        applicationId "com.apps.restaurantfinder"
+        minSdkVersion 15
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            resValue "string", "google_maps_api_key", "AIzaSyCLOXpUzZKXXT3yjsbpOgNgeSutHwrjgUM"
+        }
+        debug {
+            resValue "string", "google_maps_api_key", "AIzaSyCLOXpUzZKXXT3yjsbpOgNgeSutHwrjgUM"
+        }
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.0.2'
+    implementation 'com.android.support:design:27.0.2'
+    implementation 'com.android.support:cardview-v7:27.0.2'
+    implementation 'com.android.support:multidex:1.0.0'
+    implementation files('libs/apache-mime4j-0.6.jar')
+    implementation files('libs/httpclient-4.3.4.jar')
+    implementation files('libs/httpcore-4.3.2.jar')
+    implementation files('libs/httpmime-4.3.4.jar')
+    implementation files('libs/jackson-annotations-2.2.2.jar')
+    implementation files('libs/jackson-core-2.2.2.jar')
+    implementation files('libs/jackson-databind-2.2.2.jar')
+    implementation files('libs/universal-image-loader-1.9.2-SNAPSHOT-with-sources.jar')
+    implementation 'com.etsy.android.grid:library:1.0.5'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'com.davemorrissey.labs:subsampling-scale-image-view:3.5.0'
+    implementation 'com.google.android.gms:play-services-maps:15.0.0'
+    implementation 'com.google.android.gms:play-services-location:15.0.0'
+    implementation 'com.google.android.gms:play-services-ads:15.0.0'
+    implementation 'com.anthonycr.grant:permissions:1.0'
+}
