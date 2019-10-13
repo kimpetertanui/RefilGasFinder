@@ -4,8 +4,6 @@ import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 
-import com.apps.restaurantfinder.R;
-
 /**
  * Created by mg on 24/10/16.
  */

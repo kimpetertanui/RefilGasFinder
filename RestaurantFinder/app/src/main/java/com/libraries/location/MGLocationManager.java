@@ -12,8 +12,6 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
 
-import com.apps.restaurantfinder.R;
-
 /**
  * Created by mg on 24/10/16.
  */

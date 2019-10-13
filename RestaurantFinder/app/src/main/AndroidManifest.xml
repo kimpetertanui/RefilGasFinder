@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.apps.restaurantfinder">
+    package="com.apps.gasfinder">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -32,10 +32,10 @@
         -->
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="@string/google_maps_api_key" />
+            android:value="AIzaSyCK-F4Zst7xnw6GzhH1jy41fjVIAmoYuRA" />
 
         <activity
-            android:name=".SplashActivity"
+            android:name="com.apps.gasfinder.SplashActivity"
             android:theme="@style/SplashTheme"
             android:label="@string/app_name">
             <intent-filter>
@@ -47,7 +47,7 @@
         </activity>
 
         <activity
-            android:name="com.apps.restaurantfinder.MainActivity"
+            android:name="com.apps.gasfinder.MainActivity"
             android:theme="@style/MainTheme"
             android:label="@string/app_name"/>
 

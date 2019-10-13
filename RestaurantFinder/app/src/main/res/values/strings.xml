@@ -27,7 +27,7 @@
     <string name="sub_tab_gallery">Gallery</string>
 
 
-    <string name="detail_food_rating">Food Rating</string>
+    <string name="detail_food_rating">Gas Rating</string>
     <string name="detail_price_rating">Price Rating</string>
     <string name="detail_working_hours">Working Hours</string>
     <string name="detail_amenitites">Amenities</string>
@@ -35,7 +35,7 @@
     <string name="keywords">Keywords</string>
     <string name="category">Category</string>
     <string name="price_rating_range">Price Rating Range</string>
-    <string name="food_rating_range">Food Rating Range</string>
+    <string name="food_rating_range">Gas Rating Range</string>
 
     <string name="select_category">Select Category</string>
     <string name="search">Search</string>
@@ -58,11 +58,11 @@
 
     <string name="cannot_determine_location">Cannot determine location.</string>
     <string name="cannot_determine_direction">Failed to get direction.</string>
-    <string name="select_one_restaurant">Please select a restaurant.</string>
+    <string name="select_one_restaurant">Please select a gas distributor.</string>
     <string name="km">Km.</string>
     <string name="loading_image">Loading Image</string>
 
-    <string name="restaurant_details">Restaurant Details</string>
+    <string name="restaurant_details">Gas Distributor Details</string>
     <string name="resuls">Results</string>
     <string name="settings">Settings</string>
 
@@ -107,4 +107,5 @@
     <string name="require_consent">We require this consent for the app to function.</string>
     <string name="choose_browser">Choose browser:</string>
     <string name="no_phone_no_provided">No phone number provided.</string>
+<!--    <string name="google_maps_api_key">AIzaSyCK-F4Zst7xnw6GzhH1jy41fjVIAmoYuRA</string>-->
 </resources>

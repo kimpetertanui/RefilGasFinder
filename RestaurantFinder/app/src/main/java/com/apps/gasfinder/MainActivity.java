@@ -1,4 +1,4 @@
-package com.apps.restaurantfinder;
+package com.apps.gasfinder;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;

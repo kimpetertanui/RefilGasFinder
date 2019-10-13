@@ -17,7 +17,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.models.Restaurant;
-import com.apps.restaurantfinder.R;
+import com.apps.gasfinder.R;
 
 public class SubDetailMapView implements OnMapReadyCallback {
 

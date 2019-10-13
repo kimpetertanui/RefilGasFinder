@@ -18,7 +18,7 @@ import android.widget.Toast;
 import com.config.UIConfig;
 import com.models.Restaurant;
 import com.projects.activities.DetailActivity;
-import com.apps.restaurantfinder.R;
+import com.apps.gasfinder.R;
 
 public class SubDetailAboutView implements OnClickListener {
 

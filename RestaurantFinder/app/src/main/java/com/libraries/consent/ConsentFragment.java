@@ -14,7 +14,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import com.config.UIConfig;
 import com.libraries.utilities.MGUtilities;
-import com.apps.restaurantfinder.R;
+import com.apps.gasfinder.R;
 
 public class ConsentFragment extends Fragment {
 

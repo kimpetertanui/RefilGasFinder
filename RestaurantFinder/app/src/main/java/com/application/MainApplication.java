@@ -35,7 +35,6 @@ import com.libraries.usersession.UserAccessSession;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.nostra13.universalimageloader.core.ImageLoader;
 import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
-import com.apps.restaurantfinder.R;
 
 import java.io.IOException;
 import java.security.MessageDigest;

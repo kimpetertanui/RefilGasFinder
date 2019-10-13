@@ -21,7 +21,7 @@ import com.libraries.adapters.MGListAdapter.OnMGListAdapterAdapterListener;
 import com.libraries.imageview.StaggeredImageView;
 import com.models.Photo;
 import com.projects.activities.ImageViewerActivity;
-import com.apps.restaurantfinder.R;
+import com.apps.gasfinder.R;
 import java.util.ArrayList;
 
 public class GalleryFragment extends Fragment implements OnItemClickListener {

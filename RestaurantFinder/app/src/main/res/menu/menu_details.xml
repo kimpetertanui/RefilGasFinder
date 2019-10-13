@@ -4,7 +4,7 @@
 
     <item
         android:title="@string/favorites"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/splash_logo"
         android:id="@+id/menuReview"
         android:orderInCategory="100"
         app:showAsAction="always"/>

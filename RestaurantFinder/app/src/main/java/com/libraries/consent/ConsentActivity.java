@@ -11,8 +11,8 @@ import android.view.MenuItem;
 import android.view.View;
 import com.config.UIConfig;
 import com.libraries.utilities.MGUtilities;
-import com.apps.restaurantfinder.MainActivity;
-import com.apps.restaurantfinder.R;
+import com.apps.gasfinder.MainActivity;
+import com.apps.gasfinder.R;
 
 public class ConsentActivity extends AppCompatActivity implements View.OnClickListener{
 

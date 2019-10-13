@@ -28,8 +28,7 @@ import com.libraries.utilities.MGUtilities;
 import com.models.Category;
 import com.models.Data;
 import com.projects.activities.RestaurantActivity;
-import com.apps.restaurantfinder.MainActivity;
-import com.apps.restaurantfinder.R;
+import com.apps.gasfinder.R;
 
 import java.util.ArrayList;
 

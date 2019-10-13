@@ -27,8 +27,8 @@ import com.models.Category;
 import com.models.Favorite;
 import com.models.Photo;
 import com.models.Restaurant;
-import com.apps.restaurantfinder.MainActivity;
-import com.apps.restaurantfinder.R;
+import com.apps.gasfinder.MainActivity;
+import com.apps.gasfinder.R;
 
 import java.util.ArrayList;
 
