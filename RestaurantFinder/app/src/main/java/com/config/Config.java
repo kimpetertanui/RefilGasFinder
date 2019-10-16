@@ -27,7 +27,8 @@ public class Config {
     public final static int MAX_RADIUS_IN_KM = 5000;
 
     // Change this url depending on the name of your web hosting.
-    public static String BASE_URL = "http://mangasaurgames.com/apps/mg/restaurantfinder/";
+//    public static String BASE_URL = "http://mangasaurgames.com/apps/mg/restaurantfinder/";
+    public static String BASE_URL = "https://gasdeliva.000webhostapp.com/";
 
     // Server API KEY
     // This key must match in the Config.php file
