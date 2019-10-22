@@ -65,7 +65,7 @@
     <string name="restaurant_details">Gas Distributor Details</string>
     <string name="resuls">Results</string>
     <string name="settings">Settings</string>
-
+    <string name="cart">Make an Order</string>
 
     <string name="radius_nearby">Radius Nearby</string>
     <string name="radius_nearby_msg">Enter radius in Km.</string>
@@ -107,5 +107,5 @@
     <string name="require_consent">We require this consent for the app to function.</string>
     <string name="choose_browser">Choose browser:</string>
     <string name="no_phone_no_provided">No phone number provided.</string>
-<!--    <string name="google_maps_api_key">AIzaSyCK-F4Zst7xnw6GzhH1jy41fjVIAmoYuRA</string>-->
+    <!--    <string name="google_maps_api_key">AIzaSyCK-F4Zst7xnw6GzhH1jy41fjVIAmoYuRA</string>-->
 </resources>
