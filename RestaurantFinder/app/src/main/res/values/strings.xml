@@ -66,6 +66,8 @@
     <string name="resuls">Results</string>
     <string name="settings">Settings</string>
     <string name="cart">Make an Order</string>
+    <string name="confirm">Confirm Payment</string>
+    <string name="welcome_text">By clicking the button below you confirm that want to make an order and you agree with our terms and conditions that you must pay before delivery is made.In this case this is to make sure that you really ordered the gas</string>
 
     <string name="radius_nearby">Radius Nearby</string>
     <string name="radius_nearby_msg">Enter radius in Km.</string>

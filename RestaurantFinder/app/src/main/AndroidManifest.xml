@@ -19,7 +19,8 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.projects.activities.CartActivity"></activity>
+        <activity android:name="com.projects.activities.MpesaActivity"></activity>
+        <activity android:name="com.projects.activities.CartActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
