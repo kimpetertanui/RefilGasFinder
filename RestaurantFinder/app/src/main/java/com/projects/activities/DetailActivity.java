@@ -175,11 +175,20 @@ public class DetailActivity extends AppCompatActivity implements  View.OnClickLi
     public boolean onOptionsItemSelected(MenuItem item) {
         // toggle nav drawer on selecting action bar app icon/title
         // Handle action bar actions click
+
+        int id = item.getItemId();
+
         switch (item.getItemId()) {
             case R.id.addFave:
                 Restaurant resFave = q.getFavoriteRestaurantsByRestaurantId(restaurant.getRestaurant_id());
                 if(resFave == null) {
                     addToFavorites();
+                }
+
+                else if (id == R.id.addOrder) {
+//            return true;
+                    Intent intent= new Intent(DetailActivity.this,SettingsActivity.class);
+                    startActivity(intent);
                 }
                 else {
                     deleteFavorite();
