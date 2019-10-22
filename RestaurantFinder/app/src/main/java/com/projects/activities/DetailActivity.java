@@ -196,7 +196,7 @@ public class DetailActivity extends AppCompatActivity implements  View.OnClickLi
 
                 else if (id == R.id.addOrder) {
 //            return true;
-                    Intent intent= new Intent(DetailActivity.this,SettingsActivity.class);
+                    Intent intent= new Intent(DetailActivity.this,CartActivity.class);
                     startActivity(intent);
                 }
                 else {
