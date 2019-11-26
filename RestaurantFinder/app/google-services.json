@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "866881384048",
+    "firebase_url": "https://getagas-3773d.firebaseio.com",
+    "project_id": "getagas-3773d",
+    "storage_bucket": "getagas-3773d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:866881384048:android:0e1ce75bf2f43caf6b4eb5",
+        "android_client_info": {
+          "package_name": "com.apps.gasfinder"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "866881384048-41f1qnt9t84spmol8p0t7i2i633e4ljf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC75nCvGdW9Y8-5VtektoVjAw0mUU6KZaU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "866881384048-41f1qnt9t84spmol8p0t7i2i633e4ljf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

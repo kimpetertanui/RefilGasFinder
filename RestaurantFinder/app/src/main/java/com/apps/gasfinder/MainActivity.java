@@ -28,6 +28,7 @@ import com.google.android.gms.ads.AdSize;
 import com.google.android.gms.ads.AdView;
 import com.libraries.utilities.MGUtilities;
 
+import com.projects.activities.ProfileActivity;
 import com.projects.activities.SettingsActivity;
 import com.projects.fragments.CategoryFragment;
 import com.projects.fragments.FavoriteFragment;
@@ -158,6 +159,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         if (id == R.id.nav_settings) {
             i = new Intent( this, SettingsActivity.class);
+            startActivity(i);
+        }
+        if (id == R.id.nav_profile) {
+            i = new Intent( this, ProfileActivity.class);
             startActivity(i);
         }
 

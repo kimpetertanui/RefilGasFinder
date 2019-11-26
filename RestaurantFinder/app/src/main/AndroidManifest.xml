@@ -19,7 +19,11 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.projects.activities.MpesaActivity"></activity>
+        <activity android:name="com.projects.activities.ResetPasswordActivity"></activity>
+        <activity android:name="com.projects.activities.ProfileActivity" />
+        <activity android:name="com.projects.activities.SignupActivity" />
+        <activity android:name="com.projects.activities.LoginActivity" />
+        <activity android:name="com.projects.activities.MpesaActivity" />
         <activity android:name="com.projects.activities.CartActivity" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.

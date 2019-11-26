@@ -16,6 +16,7 @@ import com.libraries.consent.ConsentParser;
 import com.libraries.consent.ConsentSession;
 import com.libraries.consent.Region;
 import com.libraries.utilities.MGUtilities;
+import com.projects.activities.LoginActivity;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -48,7 +49,7 @@ public class SplashActivity extends AppCompatActivity {
         h.postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent intent = new Intent(SplashActivity.this, MainActivity.class);
+                Intent intent = new Intent(SplashActivity.this, LoginActivity.class);
                 startActivity(intent);
                 finish();
             }
