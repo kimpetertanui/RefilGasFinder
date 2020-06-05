@@ -1,6 +1,6 @@
 package com.config;
 
-import com.apps.gasfinder.R;
+import com.apps.restaurantfinder.R;
 
 /**
  * Created by mg on 20/10/16.
@@ -28,7 +28,7 @@ public class Config {
 
     // Change this url depending on the name of your web hosting.
 //    public static String BASE_URL = "http://mangasaurgames.com/apps/mg/restaurantfinder/";
-    public static String BASE_URL = "https://gasdeliva.000webhostapp.com/";
+    public static String BASE_URL = "http://www.elacomms.com/kimeli/restaurantfinder/";
 
     // Server API KEY
     // This key must match in the Config.php file

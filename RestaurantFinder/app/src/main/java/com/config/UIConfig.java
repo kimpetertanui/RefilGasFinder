@@ -1,7 +1,7 @@
 package com.config;
 
 import com.libraries.consent.Consent;
-import com.apps.gasfinder.R;
+import com.apps.restaurantfinder.R;
 
 /**
  * Created by mg on 20/10/16.

@@ -5,9 +5,9 @@ import android.content.pm.ActivityInfo;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
-import android.support.v4.view.PagerAdapter;
-import android.support.v4.view.ViewPager;
-import android.support.v7.app.AppCompatActivity;
+import androidx.viewpager.widget.PagerAdapter;
+import androidx.viewpager.widget.ViewPager;
+import androidx.appcompat.app.AppCompatActivity;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
@@ -20,7 +20,7 @@ import com.config.UIConfig;
 import com.davemorrissey.labs.subscaleview.ImageSource;
 import com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView;
 import com.models.Photo;
-import com.apps.gasfinder.R;
+import com.apps.restaurantfinder.R;
 import com.squareup.picasso.Callback;
 import com.squareup.picasso.MemoryPolicy;
 import com.squareup.picasso.NetworkPolicy;
@@ -109,6 +109,16 @@ public class ImageViewerActivity extends AppCompatActivity {
 					imgViewPhoto.setImage(ImageSource.bitmap(bitmap));
 					tvLoadingImage.setVisibility(View.GONE);
 				}
+
+//				@Override
+//				public void onError() {
+//
+//				}
+
+//				@Override
+//				public void onError(Exception e) {
+//
+//				}
 
 				@Override
 				public void onError() {

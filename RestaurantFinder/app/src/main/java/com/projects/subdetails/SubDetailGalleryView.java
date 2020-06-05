@@ -1,7 +1,7 @@
 package com.projects.subdetails;
 
 import android.content.Intent;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +18,7 @@ import com.models.Photo;
 import com.models.Restaurant;
 import com.nostra13.universalimageloader.core.DisplayImageOptions;
 import com.projects.activities.ImageViewerActivity;
-import com.apps.gasfinder.R;
+import com.apps.restaurantfinder.R;
 import java.util.ArrayList;
 
 public class SubDetailGalleryView implements OnItemClickListener {

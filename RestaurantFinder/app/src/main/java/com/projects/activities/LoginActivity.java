@@ -1,9 +1,8 @@
 package com.projects.activities;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -12,8 +11,10 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.apps.gasfinder.MainActivity;
-import com.apps.gasfinder.R;
+import com.ads.mobitechadslib.MobiAdBanner;
+import com.ads.mobitechadslib.MobitechAds;
+import com.apps.restaurantfinder.MainActivity;
+import com.apps.restaurantfinder.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.FirebaseApp;
@@ -49,6 +50,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         resetBtn.setOnClickListener(this);
         createAccountBtn = (TextView) findViewById(R.id.createAccTextView);
         createAccountBtn.setOnClickListener(this);
+
+        //showAds();
+        MobiAdBanner bannerAd = findViewById(R.id.bannerAd);
+        bannerAd.getBannerAds(this,"892880", "5");
+        MobitechAds.getIntertistialAd(LoginActivity.this,"892880", "1");
 
 
     }

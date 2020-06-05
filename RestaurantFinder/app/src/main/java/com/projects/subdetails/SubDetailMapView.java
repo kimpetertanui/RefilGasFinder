@@ -1,8 +1,8 @@
 package com.projects.subdetails;
 
 
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentTransaction;
+import androidx.fragment.app.FragmentActivity;
+import androidx.fragment.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 
@@ -17,7 +17,7 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.models.Restaurant;
-import com.apps.gasfinder.R;
+import com.apps.restaurantfinder.R;
 
 public class SubDetailMapView implements OnMapReadyCallback {
 

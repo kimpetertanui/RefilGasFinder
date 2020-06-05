@@ -1,16 +1,19 @@
 package com.projects.activities;
 
-import android.app.ActionBar;
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.apps.gasfinder.R;
+import com.ads.mobitechadslib.MobiAdBanner;
+import com.ads.mobitechadslib.MobitechAds;
+import com.apps.restaurantfinder.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
@@ -41,7 +44,13 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
         accessUserInformation();
+
+        //showAds();
+        MobiAdBanner bannerAd = findViewById(R.id.bannerAd);
+        bannerAd.getBannerAds(this,"681530", "5");
+        MobitechAds.getIntertistialAd(ProfileActivity.this,"681530", "1");
     }
+
 
 
 
@@ -71,6 +80,27 @@ public class ProfileActivity extends AppCompatActivity {
 
 
 
+    // .......start of backpess............
+    @Override
+    public void onResume() {
+        super.onResume();
+
+
+        ActionBar actionBar = this.getSupportActionBar();
+        actionBar.setTitle(R.string.profile);
+
+
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+    }
+
+    @Override
+    public boolean onSupportNavigateUp() {
+        onBackPressed();
+        return true;
+    }
+
+    //..............end of backpress....................
 
 
 }

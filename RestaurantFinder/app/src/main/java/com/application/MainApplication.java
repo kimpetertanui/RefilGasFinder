@@ -15,9 +15,9 @@ import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.StrictMode;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
-import android.support.multidex.MultiDex;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.multidex.MultiDex;
 import android.util.Base64;
 import android.util.Log;
 

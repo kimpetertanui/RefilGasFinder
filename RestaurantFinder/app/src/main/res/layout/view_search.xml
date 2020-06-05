@@ -164,7 +164,7 @@
                 android:layout_marginTop="@dimen/dimen_50dp"
                 android:orientation="vertical">
 
-                <android.support.v7.widget.AppCompatButton
+                <androidx.appcompat.widget.AppCompatButton
                     style="@style/AppTheme.AccentButton"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
@@ -176,7 +176,7 @@
                     android:layout_gravity="center_horizontal"
                     android:layout_marginTop="@dimen/dimen_20dp" />
 
-                <android.support.v7.widget.AppCompatButton
+                <androidx.appcompat.widget.AppCompatButton
                     style="@style/AppTheme.AccentButton"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"

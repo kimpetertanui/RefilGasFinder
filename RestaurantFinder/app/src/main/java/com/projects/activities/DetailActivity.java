@@ -6,9 +6,9 @@ import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.v4.widget.SwipeRefreshLayout;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.FrameLayout;
@@ -26,7 +26,7 @@ import com.libraries.utilities.MGUtilities;
 import com.models.Favorite;
 import com.models.Photo;
 import com.models.Restaurant;
-import com.apps.gasfinder.R;
+import com.apps.restaurantfinder.R;
 import com.projects.subdetails.SubDetailAboutView;
 import com.projects.subdetails.SubDetailGalleryView;
 import com.projects.subdetails.SubDetailMapView;
@@ -48,14 +48,14 @@ public class DetailActivity extends AppCompatActivity implements  View.OnClickLi
 		setContentView(R.layout.fragment_details);
         setTitle(R.string.restaurant_details);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent =new Intent(DetailActivity.this,CartActivity.class);
-                startActivity(intent);
-            }
-        });
+//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+//        fab.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Intent intent =new Intent(DetailActivity.this,ProfileActivity.class);
+//                startActivity(intent);
+//            }
+//        });
 
 		q = MainApplication.getQueriesInstance(this);
         swipeRefresh = (SwipeRefreshLayout) findViewById(R.id.swipe_refresh);
@@ -194,11 +194,11 @@ public class DetailActivity extends AppCompatActivity implements  View.OnClickLi
                     addToFavorites();
                 }
 
-                else if (id == R.id.addOrder) {
-//            return true;
-                    Intent intent= new Intent(DetailActivity.this,CartActivity.class);
-                    startActivity(intent);
-                }
+//                else if (id == R.id.addOrder) {
+////            return true;
+//                    Intent intent= new Intent(DetailActivity.this,CartActivity.class);
+//                    startActivity(intent);
+//                }
                 else {
                     deleteFavorite();
                 }

@@ -4,8 +4,8 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.Fragment;
-import android.support.v4.widget.SwipeRefreshLayout;
+import androidx.fragment.app.Fragment;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,7 +21,7 @@ import com.libraries.adapters.MGListAdapter.OnMGListAdapterAdapterListener;
 import com.libraries.imageview.StaggeredImageView;
 import com.models.Photo;
 import com.projects.activities.ImageViewerActivity;
-import com.apps.gasfinder.R;
+import com.apps.restaurantfinder.R;
 import java.util.ArrayList;
 
 public class GalleryFragment extends Fragment implements OnItemClickListener {

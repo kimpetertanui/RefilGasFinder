@@ -1,32 +1,32 @@
-package com.apps.gasfinder;
+package com.apps.restaurantfinder;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.design.widget.NavigationView;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.view.GravityCompat;
-import android.support.v4.widget.DrawerLayout;
-import android.support.v7.app.ActionBarDrawerToggle;
-import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
-import android.util.Log;
+
+import com.ads.mobitechadslib.MobiAdBanner;
+import com.ads.mobitechadslib.MobitechAds;
+import com.google.android.material.navigation.NavigationView;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.appcompat.app.ActionBarDrawerToggle;
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.FrameLayout;
 import android.widget.Toast;
 import com.application.MainApplication;
-import com.config.Config;
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
-import com.libraries.utilities.MGUtilities;
+//import com.google.android.gms.ads.AdRequest;
+//import com.google.android.gms.ads.AdSize;
+//import com.google.android.gms.ads.AdView;
 
 import com.projects.activities.ProfileActivity;
 import com.projects.activities.SettingsActivity;
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     NavigationView navigationView;
     boolean doubleBackToExitPressedOnce = false;
     public static int offsetY = 0;
-    private AdView adView;
+   // private AdView adView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +57,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             toolbar.setBackgroundColor(getResources().getColor(R.color.colorAccent));
         }
         setSupportActionBar(toolbar);
+
 
         navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -82,7 +83,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             offsetY = TypedValue.complexToDimensionPixelSize(tv.data, getResources().getDisplayMetrics());
         }
         showFragment(new HomeFragment());
-        showAds();
+        //showAds();
+        MobiAdBanner bannerAd = findViewById(R.id.bannerAd);
+        bannerAd.getBannerAds(this,"892880", "5");
+        MobitechAds.getIntertistialAd(MainActivity.this,"892880", "1");
     }
 
     @Override
@@ -90,7 +94,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
-        } else {
+        }
+        else {
             if (doubleBackToExitPressedOnce) {
                 super.onBackPressed();
                 return;
@@ -187,35 +192,35 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         ft.replace(R.id.content_frame, fragment).commitAllowingStateLoss();
     }
 
-    public void showAds() {
-        String deviceId = MGUtilities.getDeviceID(getApplicationContext());
-        Log.e("DEVICE ID", "------------------------------------------");
-        Log.e("DEVICE ID", deviceId);
-        Log.e("DEVICE ID", "------------------------------------------");
-        FrameLayout frameAds = (FrameLayout) findViewById(R.id.frameAds);
-        if (Config.WILL_SHOW_ADS) {
-            frameAds.setVisibility(View.VISIBLE);
-            if (adView == null) {
-                adView = new AdView(this);
-                adView.setAdSize(AdSize.SMART_BANNER);
-                adView.setAdUnitId(Config.BANNER_UNIT_ID);
-                frameAds.addView(adView);
-
-                AdRequest.Builder builder = new AdRequest.Builder();
-                if (Config.TEST_ADS_USING_TESTING_DEVICE)
-                    builder.addTestDevice(Config.TESTING_DEVICE_HASH);
-
-                if(Config.TEST_ADS_USING_EMULATOR)
-                    builder.addTestDevice(AdRequest.DEVICE_ID_EMULATOR);
-
-                AdRequest adRequest = builder.build();
-                // Start loading the ad in the background.
-                adView.loadAd(adRequest);
-            }
-        } else {
-            frameAds.setVisibility(View.GONE);
-        }
-    }
+//    public void showAds() {
+//        String deviceId = MGUtilities.getDeviceID(getApplicationContext());
+//        Log.e("DEVICE ID", "------------------------------------------");
+//        Log.e("DEVICE ID", deviceId);
+//        Log.e("DEVICE ID", "------------------------------------------");
+//        FrameLayout frameAds = (FrameLayout) findViewById(R.id.frameAds);
+//        if (Config.WILL_SHOW_ADS) {
+//            frameAds.setVisibility(View.VISIBLE);
+//            if (adView == null) {
+//                adView = new AdView(this);
+//                adView.setAdSize(AdSize.SMART_BANNER);
+//                adView.setAdUnitId(Config.BANNER_UNIT_ID);
+//                frameAds.addView(adView);
+//
+//                AdRequest.Builder builder = new AdRequest.Builder();
+//                if (Config.TEST_ADS_USING_TESTING_DEVICE)
+//                    builder.addTestDevice(Config.TESTING_DEVICE_HASH);
+//
+//                if(Config.TEST_ADS_USING_EMULATOR)
+//                    builder.addTestDevice(AdRequest.DEVICE_ID_EMULATOR);
+//
+//                AdRequest adRequest = builder.build();
+//                // Start loading the ad in the background.
+//                adView.loadAd(adRequest);
+//            }
+//        } else {
+//            frameAds.setVisibility(View.GONE);
+//        }
+//    }
 
     @Override
     public void onStart() {

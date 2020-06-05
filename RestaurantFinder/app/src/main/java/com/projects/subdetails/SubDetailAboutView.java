@@ -2,7 +2,7 @@ package com.projects.subdetails;
 
 import android.content.Intent;
 import android.net.Uri;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.text.Html;
 import android.text.Spanned;
 import android.view.LayoutInflater;
@@ -18,7 +18,7 @@ import android.widget.Toast;
 import com.config.UIConfig;
 import com.models.Restaurant;
 import com.projects.activities.DetailActivity;
-import com.apps.gasfinder.R;
+import com.apps.restaurantfinder.R;
 
 public class SubDetailAboutView implements OnClickListener {
 

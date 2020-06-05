@@ -1,21 +1,22 @@
 package com.projects.activities;
 
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
-import android.text.TextUtils;
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.ActionBar;
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.ads.mobitechadslib.MobitechAds;
 import com.androidstudy.daraja.Daraja;
 import com.androidstudy.daraja.DarajaListener;
 import com.androidstudy.daraja.model.AccessToken;
 import com.androidstudy.daraja.model.LNMExpress;
 import com.androidstudy.daraja.model.LNMResult;
-import com.apps.gasfinder.R;
+import com.apps.restaurantfinder.R;
 
 
 //import butterknife.ButterKnife;
@@ -82,7 +83,7 @@ public class MpesaActivity extends AppCompatActivity {
 
             //TODO :: REPLACE WITH YOUR OWN CREDENTIALS  :: THIS IS SANDBOX DEMO
             LNMExpress lnmExpress = new LNMExpress( "174379", "bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919",  //https://developer.safaricom.co.ke/test_credentials
-                    "850", "254722648834", "174379", "254708995320", "http://meal.shulemall.com/api", "GetGas", "Pay" );
+                    "850", "254722648834", "174379", "254727882821", "http://meal.shulemall.com/api", "GetGas", "Pay" );
 
             //This is the
             daraja.requestMPESAExpress( lnmExpress, new DarajaListener<LNMResult>() {
@@ -98,6 +99,8 @@ public class MpesaActivity extends AppCompatActivity {
                 }
             } );
         } );
+
+        MobitechAds.getIntertistialAd(MpesaActivity.this,"681530", "1");
     }
 
     // .......start of backpess............

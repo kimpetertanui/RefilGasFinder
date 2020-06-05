@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "866881384048",
-    "firebase_url": "https://getagas-3773d.firebaseio.com",
-    "project_id": "getagas-3773d",
-    "storage_bucket": "getagas-3773d.appspot.com"
+    "project_number": "754609278566",
+    "firebase_url": "https://restaurant-finder-1025.firebaseio.com",
+    "project_id": "restaurant-finder-1025",
+    "storage_bucket": "restaurant-finder-1025.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:866881384048:android:0e1ce75bf2f43caf6b4eb5",
+        "mobilesdk_app_id": "1:754609278566:android:f3ebcd2ccab82ccdd2a7a7",
         "android_client_info": {
-          "package_name": "com.apps.gasfinder"
+          "package_name": "com.apps.restaurantfinder"
         }
       },
       "oauth_client": [
         {
-          "client_id": "866881384048-41f1qnt9t84spmol8p0t7i2i633e4ljf.apps.googleusercontent.com",
+          "client_id": "754609278566-atsave46fn611j5rdeqpl5ktotelvl8b.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC75nCvGdW9Y8-5VtektoVjAw0mUU6KZaU"
+          "current_key": "AIzaSyD0FSbu8sM8pw9MD7o_5UIKpZ075VGD3Xs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "866881384048-41f1qnt9t84spmol8p0t7i2i633e4ljf.apps.googleusercontent.com",
+              "client_id": "754609278566-atsave46fn611j5rdeqpl5ktotelvl8b.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">GetGas</string>
+    <string name="app_name">Restaurant Finder</string>
     <string name="title_activity_maps">Map</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -109,7 +109,7 @@
     <string name="require_consent">We require this consent for the app to function.</string>
     <string name="choose_browser">Choose browser:</string>
     <string name="no_phone_no_provided">No phone number provided.</string>
-    <!--    <string name="google_maps_api_key">AIzaSyCK-F4Zst7xnw6GzhH1jy41fjVIAmoYuRA</string>-->
+<!--        <string name="google_maps_api_key">AIzaSyAmrD-yUAeBCCfU_qF1hlcjW1S2QhWQVEU</string>-->
 
 
     <string name="emailEdit">Email</string>

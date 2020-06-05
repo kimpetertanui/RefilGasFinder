@@ -3,16 +3,16 @@ package com.libraries.consent;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.support.v7.app.AppCompatActivity;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import androidx.appcompat.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import com.config.UIConfig;
 import com.libraries.utilities.MGUtilities;
-import com.apps.gasfinder.MainActivity;
-import com.apps.gasfinder.R;
+import com.apps.restaurantfinder.MainActivity;
+import com.apps.restaurantfinder.R;
 
 public class ConsentActivity extends AppCompatActivity implements View.OnClickListener{
 
